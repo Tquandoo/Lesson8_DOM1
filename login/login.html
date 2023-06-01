@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login__title">Hello Again!</div>
+        <div class="login__des">
+            Wellcome back you' ve <br>
+            been missed!
+        </div>
+        <div class="login__group">
+            <input type="text" id="username"
+                placeholder = "Enter username">
+        </div>
+        <div class="login__group">
+            <input type="text" id="password"
+                placeholder="Password">
+                <span id="login__group-showicon">
+                    <ion-icon name="eye-outline"></ion-icon>   
+                    <ion-icon name="eye-off-outline"></ion-icon>
+                </span>
+        </div>
+        <div class="login__recovery">
+            <a href="">Recovery password</a>
+        </div>
+        <div class="login__signIn">
+            <button type="button" onclick="login()">Sign In</button>
+        </div>
+        <div class="login__Or">Or continue with</div>
+        <div class="login__list">
+            <div class="login__list-item">
+                <img src="ig_instagram_media_social_icon_124260.png" alt="">
+            </div>
+            <div class="login__list-item">
+                <img src="facebook_logo_icon_181742.png" alt="">
+            </div>
+            <div class="login__list-item">
+                <img src="twitter_logo_icon_181735.png" alt="">
+            </div>
+        </div>
+        <div class="login__register">
+            Not a member? <a href="">Register now</a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src = "app.js" ></script>
+</body>
+</html>
