@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhập số:
+    </div>
+    <input type="number" id ="input" placeholder="VD:1">
+    <button type="button" onclick="showMassage();">Kiểm tra</button>
+    <script>
+        function showMassage(){
+            let result = document.getElementById("input").value;
+            if(result%2 == 0){
+                alert(result + " "+"là số chẵn");
+            }
+            else{
+                alert(result +" "+"là số lẻ");
+            }
+        }
+    </script>
+</body>
+</html>
