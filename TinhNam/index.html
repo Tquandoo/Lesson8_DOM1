@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap year</title>
+</head>
+<body>
+    <input type="number" id ="year" placeholder="2023">
+    <button type="button" onclick="search();">search</button>
+    <script>
+        function search(){
+            let year = document.getElementById("year").value;
+            let isLeapYear = false;
+            let isDivisibleBy4 = year % 4 == 0;
+            if (isDivisibleBy4) {
+            let isDivisibleBy100 = year % 100 == 0;
+            if (isDivisibleBy100) {
+                let isDivisibleBy400 = year % 400 == 0;
+                if (isDivisibleBy400) {
+                isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+            }
+            if (isLeapYear) {
+            alert(year + " is a leap year");
+            } else {
+            alert(year + " is NOT a leap year");
+            }
+        }
+        </script>
+</body>
+</html>
